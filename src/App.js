@@ -7,7 +7,7 @@ function App() {
   const [starships, setStarships] = useState([]);
 
   useEffect(() => {
-    // Fetch the starships data from the API and update state
+    
     getAllStarships()
       .then((starshipsData) => setStarships(starshipsData))
       .catch((error) => console.error('Error getting starships:', error));
